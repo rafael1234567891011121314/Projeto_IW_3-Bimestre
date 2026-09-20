@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #032e19;
+    --verde-medio: #0b5c33;
+    --verde-claro: #e7f4ec;
+    --laranja: #ff8a3d;
+    --texto: #222;
+    --branco: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    line-height: 1.6;
+    background-color: var(--branco);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 1rem 2rem;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 1.5rem;
+    background-color: var(--verde-claro);
+}
+
+.inicio h2 {
+    font-size: 2rem;
+    color: var(--verde-escuro);
+}
+
+.inicio p {
+    max-width: 600px;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--laranja);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+    background-color: var(--verde-medio);
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--verde-escuro);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.box {
+    flex: 1 1 260px;
+    max-width: 300px;
+    background-color: var(--verde-claro);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 0.5rem;
+}
+
+.destaque {
+    text-align: center;
+    max-width: 700px;
+    margin: 2rem auto 0;
+    font-style: italic;
+    color: var(--verde-medio);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem 1rem;
+}

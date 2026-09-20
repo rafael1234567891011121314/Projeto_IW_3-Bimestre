@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #032e19;
+    --verde-medio: #0b5c33;
+    --verde-claro: #e7f4ec;
+    --laranja: #ff8a3d;
+    --branco: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background-color: var(--branco);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 1rem 2rem;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+.quemsomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 3.5rem 1.5rem;
+    background-color: var(--verde-claro);
+}
+
+.quemsomos h1 {
+    color: var(--verde-escuro);
+    font-size: 2.2rem;
+}
+
+.quemsomos p {
+    max-width: 720px;
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.numero1 {
+    flex: 1 1 200px;
+    max-width: 220px;
+    text-align: center;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+}
+
+.numero2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--laranja);
+    margin-bottom: 0.3rem;
+}
+
+.missao-visao-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
+}
+
+.mvv {
+    flex: 1 1 260px;
+    max-width: 320px;
+    background-color: var(--verde-claro);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.mvv h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 0.6rem;
+}
+
+.historia {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
+    text-align: center;
+}
+
+.historia h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem 1rem;
+}
